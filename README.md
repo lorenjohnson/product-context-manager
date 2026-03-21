@@ -21,6 +21,7 @@ It is intentionally compact. The aim is not to create a heavy PM system, but a m
 - `docs/03-chat-synthesis.md`
 - `docs/04-implementation-principles.md`
 - `templates/project-adoption-checklist.md`
+- `templates/docs-readme-template.md`
 
 ## Reading Order
 
@@ -51,11 +52,7 @@ Priority first:
 
 Additional repositories with `docs/` directories to review:
 - `/Users/lorenjohnson/dev/Divine`
-- `/Users/lorenjohnson/dev/Humm`
 - `/Users/lorenjohnson/dev/HypnoPackages`
-- `/Users/lorenjohnson/dev/Worlds`
-- `/Users/lorenjohnson/dev/flowforge`
-- `/Users/lorenjohnson/dev/swarm-protocol`
 
 ## Consolidation Plan
 
@@ -80,3 +77,13 @@ Suggested starting sequence:
 1. run a full docs audit for `/Users/lorenjohnson/dev/Hypnograph`
 2. identify overlap against `docs/01` through `docs/04` in this repo
 3. propose minimal delete/keep/reference edits for Hypnograph
+
+## New Project Setup Rule
+
+For every new or existing project that adopts this system:
+
+1. ensure a root `docs/` directory exists
+2. copy `templates/docs-readme-template.md` from this repo to `<project>/docs/README.md`
+3. customize only the project name and any intentionally project-specific folders
+
+This keeps docs routing predictable for both humans and LLM-assisted sessions.
