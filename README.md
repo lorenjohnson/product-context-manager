@@ -35,3 +35,48 @@ It is intentionally compact. The aim is not to create a heavy PM system, but a m
 - If guidance is project-specific, keep it in that project repo and link back to this repo.
 - Use `templates/project-adoption-checklist.md` inside each product repo during alignment passes.
 - Prefer small, iterative edits and keep assumptions explicit.
+
+## Current Project
+
+This repository is now the root context for consolidating product-practice material from multiple software projects into one canonical system.
+
+Primary objective:
+- synthesize and condense overlapping product philosophy, principles, and method docs from project repos into this repository
+- leave project repos with only project-specific deltas plus references back here
+
+## Source Repositories
+
+Priority first:
+- `/Users/lorenjohnson/dev/Hypnograph`
+
+Additional repositories with `docs/` directories to review:
+- `/Users/lorenjohnson/dev/Divine`
+- `/Users/lorenjohnson/dev/Humm`
+- `/Users/lorenjohnson/dev/HypnoPackages`
+- `/Users/lorenjohnson/dev/Worlds`
+- `/Users/lorenjohnson/dev/flowforge`
+- `/Users/lorenjohnson/dev/swarm-protocol`
+
+## Consolidation Plan
+
+1. Audit each source repo for product-practice-like documents.
+2. Extract reusable principles and method language into `docs/` in this repo.
+3. Deduplicate and tighten wording so this repo becomes canonical.
+4. In each source repo, remove redundant shared-practice text.
+5. Replace removed sections with short references to this repo.
+6. Keep only project-specific product decisions in source repos.
+
+## Definition Of Done
+
+- `product-practice` contains the stable, canonical shared product-practice system.
+- source repos keep only local deltas and implementation-specific context.
+- each source repo has explicit references to canonical docs in this repo.
+
+## Next Thread Handoff
+
+Use this repository as the active working directory for continuation.
+
+Suggested starting sequence:
+1. run a full docs audit for `/Users/lorenjohnson/dev/Hypnograph`
+2. identify overlap against `docs/01` through `docs/04` in this repo
+3. propose minimal delete/keep/reference edits for Hypnograph
