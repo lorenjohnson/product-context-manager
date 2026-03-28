@@ -1,3 +1,7 @@
+---
+doc-status: draft
+---
+
 # Small-Fix Fast Path
 
 ## 1) Project Statement

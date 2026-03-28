@@ -1,3 +1,7 @@
+---
+doc-status: draft
+---
+
 # MCP Adapter
 
 ## 1) Project Statement

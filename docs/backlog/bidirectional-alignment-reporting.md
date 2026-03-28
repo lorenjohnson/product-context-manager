@@ -1,3 +1,7 @@
+---
+doc-status: draft
+---
+
 # Bidirectional Alignment Reporting
 
 ## 1) Project Statement

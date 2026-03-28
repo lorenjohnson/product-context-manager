@@ -3,10 +3,20 @@
 Use this template when creating a new project document.
 The New Project event in `workflow.md` requires the sections below to be filled before implementation starts.
 
+Default front matter for a project entry doc:
+
+```yaml
+---
+doc-status: draft
+---
+```
+
 Default shape is a single project file.
 If the plan becomes long or implementation-heavy, use a multi-file write-up:
 - `active/<project>/index.md` for Overview (+ Scope/Rules when useful)
 - `active/<project>/plan.md` for detailed implementation planning
+
+Supporting docs such as `plan.md` or reference notes do not need front matter by default.
 
 ## 1) Overview
 

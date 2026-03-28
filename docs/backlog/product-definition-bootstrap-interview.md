@@ -1,3 +1,7 @@
+---
+doc-status: draft
+---
+
 # Product Definition Bootstrap Interview
 
 ## 1) Project Statement

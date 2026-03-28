@@ -1,3 +1,7 @@
+---
+doc-status: draft
+---
+
 # Naming Coherence Cleanup
 
 ## 1) Project Statement

@@ -91,8 +91,10 @@ Required actions:
 
 1. Create/switch branch `project/<project-slug>` using canonical branch rules in `rules.md`.
 2. Create the project doc from `project-template.md` and fill all required sections before implementation.
-3. Ask the user only for clarifications that materially block safe progress.
-4. Begin with the smallest meaningful implementation slice.
+3. Initialize the project entry doc with `doc-status: draft`.
+4. If implementation is about to begin while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+5. Ask the user only for clarifications that materially block safe progress.
+6. Begin with the smallest meaningful implementation slice.
 
 ### Resume In-Progress Project
 
@@ -105,7 +107,8 @@ Required actions:
 3. Ensure branch `project/<project-slug>` exists and switch to it.
 4. If the branch does not exist, pause and ask whether to create it from current `main` or treat this as New Project.
 5. Reconcile project doc with current codebase reality.
-6. Continue with the next smallest meaningful implementation slice.
+6. If implementation is about to resume while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+7. Continue with the next smallest meaningful implementation slice.
 
 ### Finalize Project
 
@@ -126,4 +129,5 @@ Trigger: after any code changes during implementation.
 Required actions:
 
 1. Apply the canonical project-doc synchronization rule from `rules.md`.
-2. Continue implementation after required project doc updates are complete.
+2. Keep `doc-status` synchronized when project state has clearly changed.
+3. Continue implementation after required project doc updates are complete.

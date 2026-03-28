@@ -35,6 +35,13 @@ RFC-2119 keywords (`MUST`, `SHOULD`, `MAY`, `MUST NOT`) are normative in this do
 - Operational API names/contracts MUST be defined in `workflow.md` and MUST NOT be duplicated as independent contract files.
 - Project write-ups SHOULD use one `.md` file by default.
 - Multi-file project write-ups MUST use `active/<project>/index.md` as entrypoint.
+- Project entry docs SHOULD include YAML front matter with `doc-status`.
+- Project entry docs are the single-file project write-up or `active/<project>/index.md` for multi-file write-ups.
+- Supporting project docs such as `plan.md` or reference notes MAY omit front matter.
+- Allowed `doc-status` values are `draft`, `ready`, `in-progress`, `done`, and `wont-do`.
+- `doc-status` describes document/project-definition state and MUST NOT be treated as the same axis as queue placement in `active/`, `backlog/`, or `archive/`.
+- If implementation is about to begin from a project doc with `doc-status: draft`, the agent MUST pause and ask whether to refine further or move the doc to `ready` or `in-progress`.
+- Agents SHOULD treat `ready` as an operator-owned judgment and SHOULD NOT set it unilaterally without clear user direction.
 - Active/backlog project write-ups MUST include one intent heading from this alias set: `## Overview`, `## Goal`, or `## Description`.
 - Project write-ups MUST NOT include more than one heading from the same alias set.
 - Alias sets for exclusivity are `Overview|Goal|Description` and `Scope|Rules`.
