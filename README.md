@@ -54,12 +54,12 @@ git clone https://github.com/lorenjohnson/product-context-manager.git
 cd product-context-manager
 ```
 
-2. Run setup against the target project root from this repository.
+2. From the target project's root, ask your coding agent to use `../product-context-manager` to initialize or reconcile this project.
 
-```bash
-bash tasks/scripts/run-setup.sh ../your-project
+Copyable prompt:
+
+```text
+Use ../product-context-manager to initialize Product Context Manager in this project. If Product Context Manager is already present here, reconcile the existing setup instead of reinitializing it.
 ```
-
-3. Open the target project's `AGENTS.md` and `docs/` files, then start work from the project root with Product Context Manager in place.
 
 This sibling-directory layout matters because adopted projects load shared guidance from `../product-context-manager/...`.
