@@ -1,89 +1,65 @@
-# Product Practice
+# Product Context Manager
 
-Shared product and design philosophy, principles, and development method used across projects.
+## Overview
 
-## Purpose
+This product is a shared interface between human makers and LLM coding agents that maintains and persists the evolving context and intentions of a product across sessions. It exists to counter context rot and loss of direction caused by limited context windows and generative drift. It turns product direction into an operable contract, so sessions can start from clear grounding, apply consistent rules, and keep documentation synchronized with real work. Software here is treated as a designed relation between authors, users, and real-world conditions, so intent is continuously tested in use and steered toward more humane possibilities.
 
-This repository is the canonical home for cross-project product practice.
+Its deeper purpose is to increase the odds that LLM-assisted development produces coherent, valuable outcomes aligned with the makers' principles rather than momentum or noise. It does this with appetite, constraints, and selective refusal, not as rigid enforcement, but as support for the human stewards responsible for guiding the product. The system is meant to protect continuity of intention, reduce accidental sprawl, and hold a middle line between abstract market logic and unstructured instinct so work remains practical to steward and meaningfully beneficial to human life and relationship.
 
-Use it to:
-- define and refine enduring product/design principles
-- maintain a practical product development method
-- capture implementation heuristics that should be shared across projects
+## Product Development Principles
 
-It is intentionally compact. The aim is not to create a heavy PM system, but a maintainable set of documents that can guide product definition, design judgment, and LLM-assisted iteration.
+The aim is not framework mechanics for their own sake, and not pure improvisational authorship either. The center is authored interpretation with disciplined constraint.
 
-## Canonical Docs
+We intentionally hold a middle line between two common failures: reducing people to generic market abstractions, and building from personal instinct without a method for scope, exclusion, revision, or care.
 
-- `docs/README.md`
-- `docs/01-product-philosophy.md`
-- `docs/02-product-development-method.md`
-- `docs/03-chat-synthesis.md`
-- `docs/04-implementation-principles.md`
-- `templates/project-adoption-checklist.md`
-- `templates/docs-readme-template.md`
+Products shaped by this system should remain interpretable over time, humane in use, and practical to steward.
 
-## Reading Order
+## Practical Orientation
 
-1. `docs/01-product-philosophy.md`
-2. `docs/02-product-development-method.md`
-3. `docs/03-chat-synthesis.md`
-4. `docs/04-implementation-principles.md`
+When choices are ambiguous, prefer coherence over feature count, fewer stronger moves over many weak additions, and explicit refusal/removal over accidental sprawl.
 
-## Cross-Project Workflow
+Play and exploration are welcome, but they are held to consequence: work should stay connected to real use, real constraints, and long-term stewardship.
 
-- If guidance applies to multiple projects, keep it here.
-- If guidance is project-specific, keep it in that project repo and link back to this repo.
-- Use `templates/project-adoption-checklist.md` inside each product repo during alignment passes.
-- Prefer small, iterative edits and keep assumptions explicit.
+## Boundaries
 
-## Current Project
+- This is not a full PM platform.
+- This is not a permanent archive of every historical decision.
+- Evals are secondary and focused on decision loops.
+- Template reconciliation is a maintenance task, not an eval.
 
-This repository is now the root context for consolidating product-practice material from multiple software projects into one canonical system.
+## What Lives Here
 
-Primary objective:
-- synthesize and condense overlapping product philosophy, principles, and method docs from project repos into this repository
-- leave project repos with only project-specific deltas plus references back here
+- `principles.md`: concise principles loaded by LLM sessions.
+- `rules.md`: canonical documentation and implementation rules.
+- `tasks/README.md`: shared tools index and task usage entrypoint.
+- `workflow.md`: canonical product workflow and operational API surface.
+- `personality.md`: canonical collaboration style and partner stance.
+- `project-template.md`: required section template for new project docs.
+- `docs/`: this repository's own product docs (self-applied pattern).
+- `template/`: canonical files copied into adopting projects.
+- `tasks/`: reusable maintenance tasks (including template reconciliation).
+- `evals/`: evaluation workflows (subject to iteration).
 
-## Source Repositories
+## Adoption Intent
 
-Priority first:
-- `/Users/lorenjohnson/dev/Hypnograph`
+Projects that adopt this system copy the template payload, keep shared practice centralized here, and keep project docs focused on local product definition and active work.
 
-Additional repositories with `docs/` directories to review:
-- `/Users/lorenjohnson/dev/Divine`
-- `/Users/lorenjohnson/dev/HypnoPackages`
+## Adopt In A Project
 
-## Consolidation Plan
+1. Clone this repository as a sibling of the project you want to initialize.
 
-1. Audit each source repo for product-practice-like documents.
-2. Extract reusable principles and method language into `docs/` in this repo.
-3. Deduplicate and tighten wording so this repo becomes canonical.
-4. In each source repo, remove redundant shared-practice text.
-5. Replace removed sections with short references to this repo.
-6. Keep only project-specific product decisions in source repos.
+```bash
+cd /path/to/parent-directory
+git clone https://github.com/lorenjohnson/product-context-manager.git
+cd product-context-manager
+```
 
-## Definition Of Done
+2. Run setup against the target project root from this repository.
 
-- `product-practice` contains the stable, canonical shared product-practice system.
-- source repos keep only local deltas and implementation-specific context.
-- each source repo has explicit references to canonical docs in this repo.
+```bash
+bash tasks/scripts/run-setup.sh ../your-project
+```
 
-## Next Thread Handoff
+3. Open the target project's `AGENTS.md` and `docs/` files, then start work from the project root with Product Context Manager in place.
 
-Use this repository as the active working directory for continuation.
-
-Suggested starting sequence:
-1. run a full docs audit for `/Users/lorenjohnson/dev/Hypnograph`
-2. identify overlap against `docs/01` through `docs/04` in this repo
-3. propose minimal delete/keep/reference edits for Hypnograph
-
-## New Project Setup Rule
-
-For every new or existing project that adopts this system:
-
-1. ensure a root `docs/` directory exists
-2. copy `templates/docs-readme-template.md` from this repo to `<project>/docs/README.md`
-3. customize only the project name and any intentionally project-specific folders
-
-This keeps docs routing predictable for both humans and LLM-assisted sessions.
+This sibling-directory layout matters because adopted projects load shared guidance from `../product-context-manager/...`.
