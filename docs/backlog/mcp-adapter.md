@@ -16,7 +16,7 @@ Current behavior uses direct file and shell contract execution. Intended delta a
 ## 2) Product Fit And Value
 
 - Which product principles does this project support?
-Stewardship before expansion; preserve explicit state and boundaries.
+Coherence over accumulation; preserve explicit state and boundaries.
 - How does this align with current product definition?
 It fits the goal of predictable, portable context-management operations.
 - What user or product value is expected if this ships?
@@ -40,7 +40,7 @@ Medium-high.
 ## 4) First Slice Plan
 
 - Smallest meaningful first slice:
-Implement thin wrappers for `initialize`, `audit_projects`, `next_best_thing`, and `check_alignment`.
+Implement a thin wrapper for setup/reconciliation without changing the underlying docs contract.
 - Known uncertainties requiring user clarification:
 Preferred packaging/deployment model and authentication assumptions.
 - Immediate acceptance check for the first slice:

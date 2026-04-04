@@ -4,7 +4,7 @@
 
 This product is a shared interface between human makers and LLM coding agents that maintains and persists the evolving context and intentions of a product across sessions. It exists to counter context rot and loss of direction caused by limited context windows and generative drift. It turns product direction into an operable contract, so sessions can start from clear grounding, apply consistent rules, and keep documentation synchronized with real work. Software here is treated as a designed relation between authors, users, and real-world conditions, so intent is continuously tested in use and steered toward more humane possibilities.
 
-Its deeper purpose is to increase the odds that LLM-assisted development produces coherent, valuable outcomes aligned with the makers' principles rather than momentum or noise. It does this with appetite, constraints, and selective refusal, not as rigid enforcement, but as support for the human stewards responsible for guiding the product. The system is meant to protect continuity of intention, reduce accidental sprawl, and hold a middle line between abstract market logic and unstructured instinct so work remains practical to steward and meaningfully beneficial to human life and relationship.
+Its deeper purpose is to increase the odds that LLM-assisted development produces coherent, valuable outcomes aligned with the makers' principles rather than momentum or noise. It does this with constraints and selective refusal, not as rigid enforcement, but as support for the human stewards responsible for guiding the product. The system is meant to protect continuity of intention, reduce accidental sprawl, and hold a middle line between abstract market logic and unstructured instinct so work remains practical to steward and meaningfully beneficial to human life and relationship.
 
 ## Product Development Principles
 
@@ -24,7 +24,6 @@ Play and exploration are welcome, but they are held to consequence: work should 
 
 - This is not a full PM platform.
 - This is not a permanent archive of every historical decision.
-- Evals are secondary and focused on decision loops.
 - Template reconciliation is a maintenance task, not an eval.
 
 ## What Lives Here
@@ -32,13 +31,12 @@ Play and exploration are welcome, but they are held to consequence: work should 
 - `principles.md`: concise principles loaded by LLM sessions.
 - `rules.md`: canonical documentation and implementation rules.
 - `tasks/README.md`: shared tools index and task usage entrypoint.
-- `workflow.md`: canonical product workflow and operational API surface.
+- `workflow.md`: canonical project workflow and runtime routing.
 - `personality.md`: canonical collaboration style and partner stance.
 - `project-template.md`: required section template for new project docs.
 - `docs/`: this repository's own product docs (self-applied pattern).
 - `template/`: canonical files copied into adopting projects.
 - `tasks/`: reusable maintenance tasks (including template reconciliation).
-- `evals/`: evaluation workflows (subject to iteration).
 
 ## Adoption Intent
 

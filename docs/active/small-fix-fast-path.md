@@ -16,7 +16,7 @@ Current behavior routes most work through New Project with full spec sections. I
 ## 2) Product Fit And Value
 
 - Which product principles does this project support?
-Stewardship before expansion; coherence over accumulation; practical usefulness.
+Coherence over accumulation; meaningful first encounter; practical usefulness.
 - How does this align with current product definition?
 It supports proportional friction and fast corrective loops.
 - What user or product value is expected if this ships?

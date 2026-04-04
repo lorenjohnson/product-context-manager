@@ -7,7 +7,7 @@ Use concise language and avoid implementation details.
 ## Overview
 Product Context Manager is a shared operating layer between human makers and LLM coding agents. Its job is to preserve product context and intention across sessions, reduce context rot, and keep product work grounded in explicit docs rather than implicit chat memory.
 
-It is opinionated: it favors stewardship, coherence, and selective refusal over additive sprawl. It is not meant to replace judgment. It is meant to support the human steward in making durable product decisions while still moving quickly.
+It is opinionated: it favors coherence and selective refusal over additive sprawl. It is not meant to replace judgment. It is meant to support the human steward in making durable product decisions while still moving quickly.
 
 ## Core Promise
 When adopted in a project, this system provides:
@@ -15,7 +15,7 @@ When adopted in a project, this system provides:
 - a stable docs contract and routing model for LLM sessions
 - project-oriented workflow for new work, resumed work, and finalization
 - canonical shared rules/principles/workflow with local override points
-- repeatable maintenance and evaluation loops for reconciliation, prioritization, and alignment
+- repeatable setup and reconciliation flow for bringing projects into contract
 
 ## Experience Principles
 - Keep context explicit and persistent.

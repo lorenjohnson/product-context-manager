@@ -18,7 +18,7 @@ Current behavior gives mixed alignment/conflict sections. Intended delta is expl
 - Which product principles does this project support?
 Coherence over accumulation; practical usefulness over process theater.
 - How does this align with current product definition?
-It strengthens one of the core evaluation loops in the system.
+It would strengthen interpretability if alignment reporting is reintroduced later.
 - What user or product value is expected if this ships?
 Faster interpretation and clearer next actions after running alignment.
 - How important is it relative to current queue priorities?

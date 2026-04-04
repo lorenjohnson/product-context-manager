@@ -11,7 +11,7 @@ Normalize in-file naming from legacy `product-practice` phrasing to Product Cont
 - Why now?
 Naming drift reduces clarity and introduces avoidable confusion.
 - If this project modifies existing behavior: what is current behavior and what is the intended delta?
-Current behavior is mixed naming across docs/template/tasks/evals/scripts. Intended delta is coherent naming with explicit exceptions for repo slug/path transitions.
+Current behavior is mixed naming across docs/template/tasks/scripts. Intended delta is coherent naming with explicit exceptions for repo slug/path transitions.
 
 ## 2) Product Fit And Value
 

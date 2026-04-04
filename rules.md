@@ -20,19 +20,16 @@ RFC-2119 keywords (`MUST`, `SHOULD`, `MAY`, `MUST NOT`) are normative in this do
 - `rules.md`: project-local additions/overrides to shared rules.
 - `queue.md`: prioritized active projects, backlog projects, and incubating things the steward is thinking about.
 - `product.md`: high-level product definition.
-- `features.md`: current feature-level description used by alignment evals.
 - `active/`: active project write-ups.
 - `backlog/`: planned project write-ups not started.
 - `archive/`: completed/canceled project write-ups.
 - `archive/done.md`: completed one-liners that never had dedicated project docs.
 - `reference/`: reference docs.
 - `user-testing/`: testing notes and findings.
-- `evals/`: eval reports.
 
 ### Writing Rules
 
 - Docs routing/lifecycle policy MUST be defined in rules documents and MUST NOT be embedded in project specs.
-- Operational API names/contracts MUST be defined in `workflow.md` and MUST NOT be duplicated as independent contract files.
 - Project write-ups SHOULD use one `.md` file by default.
 - Multi-file project write-ups MUST use `active/<project>/index.md` as entrypoint.
 - Project entry docs SHOULD include YAML front matter with `doc-status`.
@@ -54,19 +51,8 @@ RFC-2119 keywords (`MUST`, `SHOULD`, `MAY`, `MUST NOT`) are normative in this do
 - New project write-ups SHOULD be initialized from shared `../../product-context-manager/project-template.md`.
 - File and folder names MUST use kebab-case.
 - Archive filenames MUST use exact format `YYYYMMDD-project-name.md`.
-- Eval filenames MUST use exact format `YYYYMMDD-<eval-name>-NN.md`.
 - When archiving a project, `queue.md` MUST be updated so active/backlog items and links stay accurate.
 - Execution/implementation constraints MUST be kept in the Implementation Rules section and MUST NOT be embedded in project specs.
-
-### Features File Rules
-
-- `features.md` MUST begin with `# Features`.
-- Feature entries in `features.md` MUST be `## <Feature Name>` headings.
-- Each feature entry SHOULD begin with a concise high-level summary of behavior and value.
-- Feature entries MAY include additional paragraphs or lists for scope details, UI surfaces, overlaps, caveats, and constraints.
-- Feature entries SHOULD stay at one abstraction level (capability clusters, not low-level controls).
-- Feature entries SHOULD be developed through operator/LLM conversation, then copy-edited into stable headings and concise descriptions.
-- `Health:` and `Health Note:` MAY be added per feature when tracking helps, and MAY be omitted when not needed.
 
 ## Implementation Rules
 

@@ -16,7 +16,7 @@ Current behavior relies on ad hoc requests. Intended delta is a codified cadence
 ## 2) Product Fit And Value
 
 - Which product principles does this project support?
-Stewardship before expansion; coherence over accumulation; reliability as product quality.
+Coherence over accumulation; meaningful first encounter; reliability as product quality.
 - How does this align with current product definition?
 It operationalizes continuity of intent and maintenance discipline.
 - What user or product value is expected if this ships?
