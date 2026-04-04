@@ -59,6 +59,7 @@ RFC-2119 keywords (`MUST`, `SHOULD`, `MAY`, `MUST NOT`) are normative in this do
 - You MUST ask before adding migration or legacy-compatibility code.
 - You MUST start project code-editing from `main` with a clean working tree, unless the user explicitly approves a different starting state.
 - You MUST ensure local `main` is up to date with `origin/main` before creating or switching project branches.
+- Project branches MUST only be created when implementation work has begun.
 - You MUST use branch format `project/<project-slug>` for project work.
 - You SHOULD keep `project-slug` stable and consistent across branch name and project doc naming.
 - You MUST start implementation with the smallest meaningful slice that can validate direction.

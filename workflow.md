@@ -20,10 +20,10 @@ This includes new features, bug fixes, and modifications of existing behavior.
 
 Required actions:
 
-1. Apply canonical branch rules from `rules.md`.
-2. Create the project doc from `project-template.md` and fill all required sections before implementation.
-3. Initialize the project entry doc with `doc-status: draft`.
-4. If implementation is about to begin while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+1. Create the project doc from `project-template.md` and fill all required sections before implementation.
+2. Initialize the project entry doc with `doc-status: draft`.
+3. If implementation is about to begin while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+4. When implementation actually begins, apply canonical branch rules from `rules.md`.
 5. Begin with the smallest meaningful implementation slice.
 
 ### Resume Project
@@ -34,9 +34,9 @@ Required actions:
 
 1. Identify the target project doc and project slug for the resumed work.
 2. If multiple active projects could match, pause and ask the user to select one.
-3. Apply canonical branch rules from `rules.md`.
-4. Reconcile project doc with current codebase reality.
-5. If implementation is about to resume while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+3. Reconcile project doc with current codebase reality.
+4. If implementation is about to resume while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
+5. When implementation actually resumes, apply canonical branch rules from `rules.md`.
 6. Continue with the next smallest meaningful implementation slice.
 
 ### Finalize Project
