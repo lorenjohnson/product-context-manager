@@ -30,6 +30,7 @@ RFC-2119 keywords (`MUST`, `SHOULD`, `MAY`, `MUST NOT`) are normative in this do
 ### Writing Rules
 
 - Docs routing/lifecycle policy MUST be defined in rules documents and MUST NOT be embedded in project specs.
+- Template-managed project docs SHOULD provide document shape and headings, not copied operational instructions.
 - Project write-ups SHOULD use one `.md` file by default.
 - Multi-file project write-ups MUST use `active/<project>/index.md` as entrypoint.
 - Project entry docs SHOULD include YAML front matter with `doc-status`.

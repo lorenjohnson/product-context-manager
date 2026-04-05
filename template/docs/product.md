@@ -1,8 +1,8 @@
 # Product
 
-This document defines enduring product intent. Keep it stable and update only when product direction changes.
-Track current focus in `queue.md`, not here.
-Use concise language and avoid implementation details.
+Use this document for durable product intent.
+Keep it high level and concise.
+Avoid implementation details.
 
 ## Overview
 
