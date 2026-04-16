@@ -29,12 +29,11 @@ This includes new features, bug fixes, and modifications of existing behavior.
 
 Required actions:
 
-1. Create the project doc from `project-template.md` and fill all required sections before implementation.
+1. Load `project-template.md`, then create the project doc and fill all required sections before implementation.
 2. Initialize the project entry doc with `doc-status: draft`.
-3. If the user explicitly directs implementation to begin while the project entry doc is still `draft`, move it to `in-progress` and continue without pausing.
-4. If implementation intent is ambiguous while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
-5. When implementation actually begins, apply canonical branch rules from `rules.md`.
-6. Begin with the smallest meaningful implementation slice.
+3. When implementation begins, apply the draft-start rule from `rules.md`.
+4. Apply any relevant implementation rules from `rules.md`.
+5. Begin with the smallest meaningful implementation slice.
 
 ### Resume Project
 
@@ -46,10 +45,9 @@ Required actions:
 2. If multiple active projects could match, pause and ask the user to select one.
 3. Load the selected project doc and any directly relevant linked project docs.
 4. Reconcile project doc with current codebase reality.
-5. If the user explicitly directs implementation to resume while the project entry doc is still `draft`, move it to `in-progress` and continue without pausing.
-6. If implementation intent is ambiguous while the project entry doc is still `draft`, pause and ask whether to refine further or move it to `ready` or `in-progress`.
-7. When implementation actually resumes, apply canonical branch rules from `rules.md`.
-8. Continue with the next smallest meaningful implementation slice.
+5. When implementation resumes, apply the draft-start rule from `rules.md`.
+6. Apply any relevant implementation rules from `rules.md`.
+7. Continue with the next smallest meaningful implementation slice.
 
 ### Finalize Project
 
