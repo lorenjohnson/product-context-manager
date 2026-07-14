@@ -72,6 +72,7 @@ STRICT_ROOT_FILES=(
 )
 
 SCAFFOLD_REL_FILES=(
+  "current.md"
   "queue.md"
   "product.md"
   "rules.md"

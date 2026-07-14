@@ -15,6 +15,7 @@ Use this file for session behavior, not durable policy or tool reference.
 ## Context Loading
 
 - Treat `AGENTS.md` load order as the default context baseline.
+- Load `docs/current.md` when present as the live working-memory note for the current branch/session.
 - Load `docs/queue.md` only when routing project work, checking project status or prioritization, or locating an existing project doc.
 - Load linked project docs only after a relevant queue entry or project doc has been selected.
 - Load `project-template.md` only during New Project when creating a new project doc.

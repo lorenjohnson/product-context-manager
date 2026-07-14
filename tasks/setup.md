@@ -16,6 +16,7 @@ In plain form: mirror `template/*` into project root.
   - `<PROJECT_ROOT>/docs/README.md`
   - any template-managed docs file not explicitly scaffold-only
 - scaffold/shape check:
+  - `<PROJECT_ROOT>/docs/current.md`
   - `<PROJECT_ROOT>/docs/queue.md`
   - `<PROJECT_ROOT>/docs/product.md`
   - `<PROJECT_ROOT>/docs/rules.md`
