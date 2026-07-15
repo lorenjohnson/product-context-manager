@@ -32,3 +32,7 @@ The intended delta is a versioned installation marker, explicit authorization fo
 - Unknown managed-path conflicts require `--adopt`; `--yes` alone cannot authorize adoption.
 - Marked installations require interactive confirmation or `--yes` before reconciliation.
 - Setup and its regression suite pass under macOS `/bin/bash` 3.2 without `rg`.
+
+## Closure
+
+Archived after implementation and verification.

@@ -1,5 +1,5 @@
 ---
-doc-status: draft
+doc-status: wont-do
 ---
 
 # Periodic Audit Policy
@@ -45,3 +45,7 @@ Add audit cadence guidance and standardized output sections to rules/workflow/ta
 Preferred cadence defaults by project velocity.
 - Immediate acceptance check for the first slice:
 An operator can request audit and get a consistent report shape tied to policy.
+
+## 5) Decision
+
+Close without implementation. Ad hoc audit requests already produce useful reviews, while a standing cadence and output contract would add process without a demonstrated continuity problem. Reconsider only if repeated audits become inconsistent or are routinely missed.

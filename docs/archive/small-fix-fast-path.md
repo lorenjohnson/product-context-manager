@@ -51,3 +51,7 @@ A session can handle a localized, low-risk fix directly while routing broader wo
 - Added a single direct-handling exception rather than a new workflow event.
 - Limited the exception to clear, localized, low-risk fixes without product, scope, architecture, migration, or data-safety decisions.
 - Added no queue, project-doc, or `current.md` requirement for directly handled fixes.
+
+## 6) Closure
+
+Archived after implementation and verification.
