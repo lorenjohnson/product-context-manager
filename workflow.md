@@ -6,11 +6,12 @@ Use this file for session behavior, not durable policy or tool reference.
 ## Routing Decision (Run First)
 
 1. If the request does not require project lifecycle changes, project-memory lookup, or code changes, handle it directly without project/branch actions and without loading queue or project docs.
-2. If routing, prioritization, or continuity depends on project state, consult `queue.md`.
-3. If requested work is already covered by an active project doc, use Resume Project.
-4. Otherwise use New Project.
-5. After meaningful project-related code changes or before handoff, run After Code Changes.
-6. When implementation appears complete, run Finalize Project.
+2. Localized, low-risk fixes with clear behavior and no product, scope, architecture, migration, or data-safety decision may be handled directly. If the work expands, use New Project.
+3. If routing, prioritization, or continuity depends on project state, consult `queue.md`.
+4. If requested work is already covered by an active project doc, use Resume Project.
+5. Otherwise use New Project.
+6. After meaningful project-related code changes or before handoff, run After Code Changes.
+7. When implementation appears complete, run Finalize Project.
 
 ## Context Loading
 
@@ -26,7 +27,7 @@ Use this file for session behavior, not durable policy or tool reference.
 ### New Project
 
 Trigger: user asks for work that is not already covered by an active project doc.
-This includes new features, bug fixes, and modifications of existing behavior.
+This includes new features and modifications of existing behavior not handled directly by the routing decision.
 
 Required actions:
 
